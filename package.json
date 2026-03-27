@@ -2,11 +2,17 @@
   "name": "chemai-lab-root",
   "version": "1.0.0",
   "description": "ChemAI Lab - AI-powered chemistry lab simulator",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
   "type": "module",
   "scripts": {
     "start": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\"",
     "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\"",
-    "start:local": "node start-all.js"
+    "start:local": "node start-all.js",
+    "build": "npm run build --workspace=client && rm -rf dist && cp -r client/dist dist"
   },
   "keywords": [
     "chemistry",
@@ -19,11 +25,6 @@
   "devDependencies": {
     "concurrently": "^9.2.1",
     "nodemon": "^3.1.11",
-    "vite": "^7.2.2"
-  },
-  "dependencies": {
-    "@tailwindcss/vite": "^4.1.17",
-    "pdf-parse": "^2.4.5",
-    "tailwindcss": "^4.1.17"
+    "vite": "^8.0.3"
   }
 }

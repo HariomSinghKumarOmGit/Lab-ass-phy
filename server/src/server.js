@@ -37,8 +37,11 @@ app.use('/api/report', reportRoutes)
 app.use(notFound)
 app.use(errorHandler)
 
-// Start server
-app.listen(PORT, () => {
-  console.log(`🧪 ChemAI Lab server running on http://localhost:${PORT}`)
-})
+// Start server internally only if not in production/Vercel
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => {
+    console.log(`🧪 ChemAI Lab server running on http://localhost:${PORT}`)
+  })
+}
 
+export default app
