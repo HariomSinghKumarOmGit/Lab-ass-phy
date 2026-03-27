@@ -30,7 +30,7 @@ export default function Navbar() {
         <a href="https://github.com/HariomSinghKumarOmGit/Chem-Clg-Proj" target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
-        <a href="https://pbs.twimg.com/media/EWdmghFWoAA09ew.jpg" target='_balnk'>We</a>
+        <a href="https://i.ytimg.com/vi/t7ImwL84BcE/maxresdefault.jpg" target='_balnk'>We</a>
         {/* <button
                 onClick={onClick}
                 className="px-4 py-2 rounded bg-green-600 text-white"
