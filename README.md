@@ -1,6 +1,8 @@
-# 🧪 ChemAI Lab
+# 🧪 PhysicsAI Lab
 
 **The Smart Virtual Chemistry Mentor**
+
+https://lab-ass-phy-dtvn.vercel.app/
 
 ---
 
